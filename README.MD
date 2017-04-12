@@ -1,4 +1,13 @@
-﻿A small excise to 
+A small excise to  cpoy the ECO-circle chart!
+===========================================================
+Just a small  attempt！
+--------------------
+
+the original chart:
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/FontMap-of-China/blob/master/Image/Final.png" width = "400" height = "400" alt="Final" align=center />
+</div>
 
 
 ```r
@@ -13,10 +22,15 @@ library(grid)
 library(plyr)
 ```
 
+> this data is from the sina blog of teacher Liu(刘万祥)！
+
 ```r
 setwd("F:/微信公众号/公众号——数据小魔方/2017年4月/20170403")
 ECOdata<-read.xlsx("ECOCircle.xlsx",sheetName="Sheet1",header=T,encoding="UTF-8",stringsAsFactors=FALSE)
 ```
+
+> this step is very very important for this article!<br>
+but it's not a general way(so it's just for here)<br>
 
 ```r
 f<-c(99,91,84,77)
@@ -27,6 +41,7 @@ ECOdata[i,h+2]<-f[1:m]
 }
 ```
 
+> create the date variable(for the aesthetics of polar attributes attribution)
 
 ```r
 newdate<-seq(from=as.Date("2014-01-01"),to=as.Date("2014-12-31"),by="1 day")
@@ -41,6 +56,9 @@ a<-seq(from=90,to=-90,length=181);b<-seq(from=90,to=-90,length=184)
 mydata$Circle<-c(a,b)
 ```
 
+
+merge the assistant  data to source data!
+-----------------------------------------------
 
 ```r
 mynewdata<-merge(mydata,ECOdata,by.x="newdate",by.y="date",all.x=T)
@@ -60,6 +78,11 @@ mynewdataoneA<-mynewdataoneA[!duplicated(mynewdataoneA[,1]),]
 mynewdataoneB<-mynewdataone[mynewdataone$Fact!=0&mynewdataone$ID>180,]
 mynewdataoneB<-mynewdataoneB[!duplicated(mynewdataoneB[,1]),]
 ```
+
+-------------------------------------------
+
+the last step :output the finall chart!
+----------------------------
 
 
 ```r
@@ -100,3 +123,32 @@ plot.margin=unit(c(.5,.5,.5,.5),"lines"),
 showtext.end()
 dev.off()
 ```
+
+
+
+联系方式：
+----------------------------------------------------
+wechat：ljty1991  <br>
+Mail:578708965@qq.com <br>
+个人公众号：数据小魔方（datamofang） <br>
+团队公众号：EasyCharts <br>
+qq交流群：[魔方学院]553270834
+
+个人简介：
+-------------------------------------------------
+**杜雨** <br>
+财经专业研究僧； <br>
+伪数据可视化达人； <br>
+文科背景的编程小白； <br>
+喜欢研究商务图表与地理信息数据可视化，爱倒腾PowerBI、SAP DashBoard、Tableau、R ggplot2、Think-cell chart等诸如此类的数据可视化软件，创建并运营微信公众号“数据小魔方”。 <br>
+Mail:578708965@qq.com <br>
+
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/FontMap-of-China/blob/master/Image/resume.png" width = "550" height = "300" alt="resume" align=center />
+</div>
+
+-------------------------------------------
+
+备注信息：
+----------------------------------------------------
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。
