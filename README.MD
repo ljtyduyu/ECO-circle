@@ -5,11 +5,14 @@ Just a small  attempt！
 
 the original chart(from Economist):
 
+
 <div  align="center">    
 <img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/one.png" width = "600" height = "400" alt="one" align=center />
 </div>
 
+
 the version copied by teacher Liu :
+
 
 <div  align="center">    
 <img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/two.png" width = "600" height = "400" alt="two" align=center />
@@ -134,7 +137,7 @@ dev.off()
 the finall dispaly:
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/three.png" width = "600" height = "400" alt="three" align=center />
+<img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/three.png" width = "650" height = "400" alt="three" align=center />
 </div>
 
 <div  align="center">    
