@@ -3,10 +3,14 @@ A small excise to  cpoy the ECO-circle chart!
 Just a small  attempt！
 --------------------
 
-the original chart:
-
+the original chart(from Economist):
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/FontMap-of-China/blob/master/Image/Final.png" width = "400" height = "400" alt="Final" align=center />
+<img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/one.png" width = "400" height = "400" alt="one" align=center />
+</div>
+
+the version copied by teacher Liu :
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/two.png" width = "400" height = "400" alt="two" align=center />
 </div>
 
 
@@ -22,7 +26,7 @@ library(grid)
 library(plyr)
 ```
 
-> this data is from the sina blog of teacher Liu(刘万祥)！
+> this data is from the sina blog of teacher Liu(WanXiang Liu)！
 
 ```r
 setwd("F:/微信公众号/公众号——数据小魔方/2017年4月/20170403")
@@ -124,7 +128,19 @@ showtext.end()
 dev.off()
 ```
 
+the finall dispaly:
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/three.png" width = "400" height = "400" alt="three" align=center />
+</div>
 
+<div  align="center">    
+<img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/four.png" width = "400" height = "400" alt="four" align=center />
+</div>
+
+This all ,thx!
+===========
+
+-------------------------------------------------------
 
 联系方式：
 ----------------------------------------------------
