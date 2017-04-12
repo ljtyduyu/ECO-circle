@@ -144,7 +144,7 @@ the finall dispaly:
 <img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/four.png" width = "600" height = "400" alt="four" align=center />
 </div>
 
-This all ,thx!
+That's all ,thx!
 ===========
 
 -------------------------------------------------------
