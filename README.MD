@@ -7,7 +7,7 @@ the original chart(from Economist):
 
 
 <div  align="center">    
-<img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/one.png" width = "600" height = "400" alt="one" align=center />
+<img src="https://github.com/ljtyduyu/ECO-circle/blob/master/Image/one.png" width = "630" height = "400" alt="one" align=center />
 </div>
 
 
